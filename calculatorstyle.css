@@ -1,0 +1,89 @@
+body{
+    background-color: aqua;
+}
+.head{
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    font-size: 30px;
+}
+p{
+
+ font-size: 20px;
+}
+.calculator{
+    position: relative;
+    top: 20vh;
+    margin: auto;
+    height: 70vh;
+    width: 40vw;
+    background-color: grey;
+    display: flexbox;
+    flex-shrink: inherit;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+.inputbox{
+    position: relative;
+    left: 4%;
+    top: 2vh;
+    height:90%;
+    width: 110%;
+    border-radius: 10px;
+    text-indent: 2vw;
+    font-size: 22px;
+    background-color: white;
+}
+input[type=button]{
+    position: relative;
+    left: 1vw;
+    top: 1vh;
+    
+    height: 50%;
+    width: 4vw;
+    font-size: 20px;
+    border: none;
+    border-radius:10px ;
+    background-color: lightgreen;
+   
+}
+input[type=button]:hover{
+    background-color: orange;
+}
+@media only screen and (max-width: 1000px) {
+    body{
+        background-color: red;
+    }
+    .calculator{
+        width: 45vw;
+    }
+    input[type=button]{
+        left: 0;
+        width: 7vw;
+    }
+    .inputbox{
+        width: 110%;
+        left: 1%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 600px){
+    body{
+        background-color: skyblue;
+    }
+    .calculator{
+
+        width: 54vw;
+    }
+    .inputbox{
+        left: 1vw;
+    }
+    input[type=button]{
+       
+        margin: auto ;
+        width: 8vw;
+    }
+} 
